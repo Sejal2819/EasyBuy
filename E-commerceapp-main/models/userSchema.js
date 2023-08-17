@@ -78,7 +78,7 @@ userSchema.methods.addcartdata = async function(cart){
         await this.save();
         return this.carts;
     } catch (error) {
-        console.log(error + "bhai cart add time aai error");
+        console.log(error + "Some Error occured in the cart");
     }
 }
 
@@ -90,12 +90,3 @@ module.exports = User;
 
 
 
-
-// carts:Array
-// jo aavi rite carts ne add karso to pn chale other wise je old methods 6 eto use krvij
-// carts:[
-//     {
-//         cart:Object
-//     }
-// ]
-//  this.carts = this.carts.concat({cart}); // to pachi cart ne destructring krine lakhvu
