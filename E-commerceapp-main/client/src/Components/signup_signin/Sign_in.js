@@ -61,7 +61,7 @@ const Sign_in = () => {
                 });
             }
         } catch (error) {
-            console.log("login page ka error" + error.message);
+            console.log("Error in login page" + error.message);
         }
     };
 
