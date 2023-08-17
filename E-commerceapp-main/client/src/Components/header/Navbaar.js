@@ -76,7 +76,6 @@ const Navbaar = () => {
         if (res.status !== 201) {
             console.log("first login");
         } else {
-            // console.log("cart add ho gya hain");
             setAccount(data);
         }
     }
@@ -98,7 +97,6 @@ const Navbaar = () => {
         });
 
         const data2 = await res2.json();
-        // console.log(data2);
 
         if (!res2.status === 201) {
             const error = new Error(res2.error);
@@ -113,7 +111,6 @@ const Navbaar = () => {
         }
     }
 
-    // for drawer
 
     const handelopen = () => {
         setDropen(true);
@@ -218,13 +215,3 @@ const Navbaar = () => {
 export default Navbaar;
 
 
-// account ? <Button id="basic-button"
-// aria-controls="basic-menu"
-// aria-haspopup="true"
-// aria-expanded={open ? 'true' : undefined}
-// onClick={handleClick}> <Avatar className="avtar2" title={account.fname.toUpperCase()}>{account.fname[0].toUpperCase()}</Avatar>  </Button> : <Button id="basic-button"
-//     aria-controls="basic-menu"
-//     aria-haspopup="true"
-//     aria-expanded={open ? 'true' : undefined}
-//     onClick={handleClick}> <Avatar className="avtar" />
-// </Button>
