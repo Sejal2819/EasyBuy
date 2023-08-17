@@ -61,7 +61,7 @@ const Signup = () => {
                 });
             }
         } catch (error) {
-            console.log("front end ka catch error hai" + error.message);
+            console.log("There is an error in the frontend" + error.message);
         }
     }
 
