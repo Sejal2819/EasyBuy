@@ -28,7 +28,7 @@ const Rightheader = ({ userlog ,logclose}) => {
 
     const { account, setAccount } = useContext(Logincontext);
 
-//  this is left drawer bt name is right header
+
 
     return (
         <div className="rightheader">
