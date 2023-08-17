@@ -38,8 +38,7 @@ const Cart = () => {
         if (res.status !== 201) {
             alert("no data available")
         } else {
-            // console.log("ind mila hain");
-            setIndedata(data);
+           setIndedata(data);
         }
     };
 
@@ -67,7 +66,7 @@ const Cart = () => {
         if (check.status !== 201) {
             alert("no data available")
         } else {
-            // console.log("cart add ho gya hain");
+            // console.log("cart is added");
             setAccount(data1)
             history.push("/buynow");
         }
